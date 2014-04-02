@@ -1,3 +1,4 @@
+student_count = 19
 # first, we print the list of students
 puts "The students of my cohort at Makers Academy"
 puts "-----------------"
@@ -22,6 +23,4 @@ puts "Emma Williams"
 puts "Joey Wolf"
 puts "Julie Walker"
 # finally we print the total
-print "Overall, we have "
-print 19
-puts " great students"
+puts "Overall, we have #{student_count} great students"
