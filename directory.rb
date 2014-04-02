@@ -1,25 +1,25 @@
 # let's put all the students into an array
 students = [
-"Steve Musgrave",
-"Sroop Sunar",
-"Colin Marshall",
-"Josh Fail-Brown",
-"Louise Lai",
-"Robin Doble",
-"Alex Wong",
-"Scott Dimmock",
-"Muhanad Al-Rubaiee",
-"Shelley Hope",
+{name: "Steve Musgrave", cohort: :march},
+{name: "Sroop Sunar", cohort: :march},
+{name: "Colin Marshall", cohort: :march},
+{name: "Josh Fail-Brown", cohort: :march},
+{name: "Louise Lai", cohort: :march},
+{name: "Robin Doble", cohort: :march},
+{name: "Alex Wong", cohort: :march},
+{name: "Scott Dimmock", cohort: :march},
+{name: "Muhanad Al-Rubaiee", cohort: :march},
+{name: "Shelley Hope", cohort: :march},
 # she's a particularly gifted student
-"Will Hall",
-"Oliver Delevingne",
-"Nico",
-"Apostolis",
-"Stefania",
-"Robert Leon",
-"Emma Williams",
-"Joey Wolf",
-"Julie Walker"
+{name: "Will Hall", cohort: :march},
+{name: "Oliver Delevingne", cohort: :march},
+{name: "Nico", cohort: :march},
+{name: "Apostolis", cohort: :march},
+{name: "Stefania", cohort: :march},
+{name: "Robert Leon", cohort: :march},
+{name: "Emma Williams", cohort: :march},
+{name: "Joey Wolf", cohort: :march},
+{name: "Julie Walker", cohort: :march},
 ]
 
 def print_header
@@ -29,7 +29,7 @@ end
 
 def print(people)
 	people.each do |person|
-		puts person
+		puts "#{person[:name]} (#{person[:cohort]} cohort)"
 	end
 end
 
