@@ -1,7 +1,6 @@
 # let's ask the user to input student names into an array
 def input_students
-	puts "Please enter the names of the students"
-	puts "To finish, just hit return twice"
+	print "Please enter the names of the students\nTo finish, just hit return twice\n"
 # create an empty array
 	students = []
 	# get the first name
@@ -24,7 +23,7 @@ def print_header
 	puts "------------"
 end
 
-def print(people)
+def print_list(people)
 	people.each do |person|
 		puts "#{person[:name]} (#{person[:cohort]} cohort)"
 	end
@@ -37,5 +36,5 @@ end
 # nothing happens until we call the methods:
 students = input_students
 print_header
-print(students)
+print_list(students)
 print_footer(students)
