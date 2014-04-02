@@ -26,11 +26,13 @@ end
 
 def print_list(people)
 	i = 0
-	people.each do |person|
-		if person[:name].chars.first == "A"
+		people.each do |person|
+		# if person[:name].chars.first == "A"
+		# if person[:name].length < 12
 		puts "#{i += 1} #{person[:name]} (#{person[:cohort]} cohort)"
 		end
-	end
+		# end
+	# end
 end
 # below is an alternative method using with_index to number each student
 # def print_list(people)
