@@ -1,3 +1,4 @@
+# first, we print the list of students
 puts "The students of my cohort at Makers Academy"
 puts "-----------------"
 puts "Steve Musgrave"
@@ -9,7 +10,8 @@ puts "Robin Doble"
 puts "Alex Wong"
 puts "Scott Dimmock"
 puts "Muhanad Al-Rubaiee"
-puts "Shelley Hope"
+puts "Shelley Hope" 
+# a particularly gifted student
 puts "Will Hall"
 puts "Oliver Delevingne"
 puts "Nico"
@@ -19,6 +21,7 @@ puts "Robert Leon"
 puts "Emma Williams"
 puts "Joey Wolf"
 puts "Julie Walker"
+# finally we print the total
 print "Overall, we have "
 print 19
 puts " great students"
