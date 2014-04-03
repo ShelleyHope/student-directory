@@ -1,6 +1,6 @@
 # let's ask the user to input student names into an array
 def input_students
-	print "Please enter the names of the students\nTo finish, just hit return twice\n"
+	print "Please enter the name of the students\n"
 # create an empty array
 	students = []
 	# get the first name
@@ -8,8 +8,12 @@ def input_students
 	# while the name is not empty, repeat this code
 	while !name.empty? do
 		# add the student hash to the array
-		students << {name: name, cohort: :march}
-		puts "Now we have #{students.length} students"
+		puts "Please enter the age of the students"
+		age = gets.chomp
+		puts "Please enter the country of birth of the students"
+		country_of_birth = gets.chomp
+		students << {name: name, age: age, country_of_birth: country_of_birth, cohort: :march}
+		puts "Now we have #{students.length} students. Please enter next student details or hit return to finish."
 		# get another name from the user
 		name = gets.chomp
 	end
@@ -37,7 +41,7 @@ def print_list(people)
 		people.each do |person|
 		# if person[:name].chars.first == "A"
 		# if person[:name].length < 12
-		puts "#{i += 1}. #{person[:name]} (#{person[:cohort]} cohort)"
+		print "#{i += 1}. #{person[:name].capitalize} \t\t#{person[:age]} \t\t#{person[:country_of_birth].capitalize} \t\t(#{person[:cohort].capitalize} Cohort)\n"
 		end
 		# end
 end
